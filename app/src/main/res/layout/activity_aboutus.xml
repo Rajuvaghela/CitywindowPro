@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sevenzero"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sevenzero"
+                android:text="About Us"
+                android:gravity="center"
+                android:textSize="@dimen/twozero"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:background="#DFDFDF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sevenzero"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_marginLeft="@dimen/twozero"
+                android:src="@drawable/contact_call" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="Contact : "
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:id="@+id/tv_call"
+                android:clickable="true"
+                android:text="+918238915015" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:background="#DFDFDF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sevenzero"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_marginLeft="@dimen/twozero"
+                android:src="@drawable/contact_mail" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="E-Mail : "
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="rehulshah86@gmail.com" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:background="#DFDFDF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sevenzero"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_marginLeft="@dimen/twozero"
+                android:src="@drawable/contact_location" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="Address : "
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sixfive"
+                android:layout_marginLeft="@dimen/onezero"
+                android:padding="@dimen/five"
+                android:maxLines="3"
+                android:text="BhaktiNagar Station Plot Street Number 6, Bhaktinagar Station Plot, Bhakti Nagar, Rajkot, Gujarat 360002" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:background="#DFDFDF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sevenzero"
+            android:visibility="visible"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_marginLeft="@dimen/twozero"
+                android:src="@drawable/fb_logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="Facebook : "
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="City Window" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:visibility="visible"
+            android:background="#DFDFDF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sevenzero"
+            android:visibility="visible"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_marginLeft="@dimen/twozero"
+                android:src="@drawable/instagram" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="Instagram : "
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:text="City Window" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:visibility="visible"
+            android:background="#DFDFDF"></View>
+    </LinearLayout>
+
+</RelativeLayout>

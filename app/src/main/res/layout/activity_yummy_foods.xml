@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#D4D4D4"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_yummyfoods_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/yummy_intro_images"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onefourzero"
+                android:fitsSystemWindows="true" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/yindicator"
+                androidadding="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yummy_intro_images"
+                android:layout_marginTop="@dimen/five"
+                app:fillColor="#000000"
+                app:radius="@dimen/five"
+                app:pageColor="#ff0000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/onezero"
+        android:layout_below="@+id/ll_yummyfoods_slider"
+        android:scrollbars="vertical" />
+</RelativeLayout>

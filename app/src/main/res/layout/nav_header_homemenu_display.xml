@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_imageView_profile"
+        android:layout_width="@dimen/onetwozero"
+        android:layout_height="@dimen/onetwozero"
+        android:layout_marginTop="@dimen/seven"
+        android:layout_weight="1"
+        android:src="@drawable/restauranty"
+        app:civ_border_color="#d4d4d4"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/nav_textview_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/five"
+        android:text="City Window"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/onesix" />
+
+    <TextView
+        android:id="@+id/nav_marchent_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rehulshah86@gmail.com"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/four"
+    android:layout_marginLeft="@dimen/two"
+    android:layout_marginRight="@dimen/two"
+    android:layout_marginTop="@dimen/four"
+    android:background="#d4d4d4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shadow"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_product_list_image"
+                android:layout_width="@dimen/oneonezero"
+                android:layout_height="@dimen/oneonezero"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:layout_marginRight="@dimen/_2ssp"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/three"
+                android:scaleType="fitXY"
+                android:src="@drawable/restauranty" />
+
+            <View
+                android:layout_width="@dimen/oneonezero"
+                android:layout_height="@dimen/one"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:layout_marginRight="@dimen/_2ssp"
+                android:background="#000000">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_product_list_name"
+                android:layout_width="@dimen/oneonezero"
+                android:layout_height="@dimen/onefive"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/five"
+                android:text="hello"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/onezero"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="@dimen/oneonezero"
+                android:layout_height="@dimen/onefive"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/onefive"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginTop="@dimen/five"
+                    android:paddingLeft="@dimen/five"
+                    android:text="Rs : "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/onezero"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_product_list_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/onefive"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginTop="@dimen/five"
+                    android:paddingLeft="@dimen/five"
+                    android:text="price"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/onezero"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout><!--
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/four"
+    android:layout_marginLeft="@dimen/two"
+    android:layout_marginRight="@dimen/two"
+
+    android:layout_marginTop="@dimen/four"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="@dimen/oneonezero"
+        android:layout_height="@dimen/oneonezero"
+        android:background="@drawable/shadow">
+
+        <LinearLayout
+            android:layout_width="@dimen/oneonezero"
+            android:layout_height="@dimen/oneonezero"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_product_list_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/oneone"
+                android:scaleType="fitXY"
+                android:src="@drawable/restauranty" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000"
+                android:paddingLeft="@dimen/twozero"
+                android:paddingRight="@dimen/twozero"></View>
+
+            <TextView
+                android:id="@+id/tv_product_list_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/threezero"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:text="Product Name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/onezero"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>-->

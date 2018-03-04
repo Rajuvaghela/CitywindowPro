@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fivezero"
+        android:layout_marginBottom="@dimen/onezero"
+        android:layout_marginTop="@dimen/threezero"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Account Setting"
+        android:textSize="@dimen/twozero"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/onezero"
+        android:layout_marginRight="@dimen/onezero"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_upload_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fivezero"
+            android:layout_marginBottom="@dimen/onezero"
+            android:background="@drawable/button_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Upload Profile Photo"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/twozero" />
+
+        <TextView
+            android:id="@+id/tv_upload_gallary_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fivezero"
+            android:layout_marginBottom="@dimen/onezero"
+            android:background="@drawable/button_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Upload Gallary Photo"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/twozero" />
+    </LinearLayout>
+
+</RelativeLayout>

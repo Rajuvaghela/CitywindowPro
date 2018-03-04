@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_submit_photo"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sixzero"
+                    android:gravity="center"
+                    android:text="Upload Live Offer detail"
+                    android:textSize="@dimen/twozero" />
+            </LinearLayout>
+
+
+            <TextView
+
+                android:id="@+id/tv_select_productname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:clickable="true"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Select Product For *"
+                android:paddingLeft="@dimen/six"
+                android:textSize="@dimen/onefour" />
+
+            <TextView
+
+                android:id="@+id/editText_productname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/six"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/editText_productprice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/six"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_Offer_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:descendantFocusability="beforeDescendants"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="Enter Offer Price *"
+                android:inputType="number"
+                android:paddingLeft="@dimen/six"
+                android:windowSoftInputMode="stateHidden" />
+
+            <EditText
+                android:id="@+id/editText_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onezerozero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Description"
+                android:paddingLeft="@dimen/six"
+                android:paddingTop="@dimen/six"
+                android:textAlignment="textStart" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_marginRight="@dimen/two"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:paddingLeft="@dimen/six"
+                    android:text="Offer Start Date"
+                    android:textAlignment="textStart" />
+
+                <Button
+                    android:id="@+id/btn_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_marginRight="@dimen/two"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:paddingLeft="@dimen/six"
+                    android:text="Offer End Date"
+                    android:textAlignment="textStart" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:ems="10"
+                android:orientation="horizontal"
+
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/btn_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_marginLeft="@dimen/two"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:paddingLeft="@dimen/six"
+                    android:text="Offer Start Time"
+                    android:textAlignment="textStart" />
+
+                <Button
+                    android:id="@+id/btn_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_marginLeft="@dimen/two"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:paddingLeft="@dimen/six"
+                    android:text="Offer End Time"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:background="#000000"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/eightzero"
+                android:layout_marginTop="@dimen/onezero"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/eightzero"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/imageview_photo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fourzero"
+                        android:layout_weight="1"
+                        android:src="@drawable/upload"
+                        android:text="Photo 1" />
+
+                    <TextView
+                        android:id="@+id/textview_price1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/four"
+                        android:layout_weight="1"
+
+                        android:text="Upload Product Image1"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_submit_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourzero"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_live_offer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourzero"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Add Live Offer"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>

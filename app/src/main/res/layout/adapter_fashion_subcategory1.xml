@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onezerozero"
+            android:layout_marginTop="@dimen/six"
+            android:scaleType="centerCrop"
+            android:src="@drawable/border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ninefive"
+            android:layout_marginTop="@dimen/onezero"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_subcategory1_image"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="@dimen/ninezero"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:padding="@dimen/five"
+                android:src="@drawable/restauranty" />
+
+            <TextView
+                android:id="@+id/tv_subcategory1_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:paddingLeft="@dimen/onezero"
+                android:paddingTop="@dimen/onezero"
+                android:text="DOSA.COM"
+                android:textAllCaps="true"
+                android:textColor="@color/red_font_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout><!--
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onezerozero"
+            android:layout_marginTop="@dimen/six"
+            android:scaleType="centerCrop"
+            android:src="@drawable/custom_border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eightzero"
+            android:layout_marginTop="@dimen/onezero"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_subcategory1_image"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="@dimen/ninezero"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:padding="@dimen/five"
+                android:src="@drawable/restauranty" />
+
+            <TextView
+                android:id="@+id/tv_subcategory1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:text="DOSA.COM"
+                android:textAllCaps="true"
+                android:textColor="@color/red_font_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>-->
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fivezero"
+        android:background="#d4d4d4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fivezero"
+            android:layout_marginBottom="@dimen/two"
+            android:layout_marginLeft="@dimen/two"
+            android:layout_marginRight="@dimen/two"
+            android:layout_marginTop="@dimen/two">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onezerozero"
+                android:layout_marginBottom="@dimen/two"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/two"
+                android:background="#FAFAFA"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9.5"
+                    android:paddingLeft="@dimen/twozero"
+                    android:text="Religion"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/onefour" />
+
+                <View
+                    android:layout_width="@dimen/one"
+                    android:layout_height="match_parent"
+                    android:background="#000000">
+
+                </View>
+
+                <ImageView
+                    android:layout_width="@dimen/twozero"
+                    android:layout_height="@dimen/twozero"
+                    android:layout_marginLeft="@dimen/five"
+                    android:src="@drawable/next" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>-->

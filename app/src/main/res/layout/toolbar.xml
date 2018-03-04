@@ -1,0 +1,42 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fivezero"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/editText_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/threezero"
+            android:layout_marginRight="@dimen/one"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:paddingLeft="@dimen/onefive"
+            android:textColor="#000000"
+            android:textColorHint="#80000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/search_cancel"
+            android:layout_width="@dimen/onezero"
+            android:layout_height="@dimen/threezero"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:padding="@dimen/five"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

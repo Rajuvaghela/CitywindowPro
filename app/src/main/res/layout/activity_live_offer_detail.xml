@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_product_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_live_offer_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/twofivezero"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginLeft="@dimen/two"
+                    android:layout_marginRight="@dimen/two"
+                    android:layout_marginTop="@dimen/two"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_live_offer_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/threezero"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingTop="@dimen/five"
+                        android:text="The Grand Murlidhar"
+                        android:textSize="@dimen/oneeight"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one"
+                    android:background="#000000"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/threezero"
+                        android:paddingLeft="@dimen/seven"
+                        android:paddingTop="@dimen/five"
+                        android:text="Product Name"
+                        android:textSize="@dimen/onesix"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/three"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+
+                    <TextView
+                        android:layout_width="@dimen/eightfive"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="Offer Start on   :"
+                        android:textSize="@dimen/onefour"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="20/10/2017 "
+                        android:textSize="@dimen/onefour" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/twozero"
+                        android:paddingRight="@dimen/onezero"
+                        android:text="12:00Pm"
+                        android:textSize="@dimen/onefour" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/three"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+
+                    <TextView
+                        android:layout_width="@dimen/eightfive"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="Offer End on     :"
+                        android:textSize="@dimen/onefour"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="20/10/2017 "
+                        android:textSize="@dimen/onefour" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/twozero"
+                        android:paddingRight="@dimen/onezero"
+                        android:text="12:00Pm"
+                        android:textSize="@dimen/onefour" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/three"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+                    <ImageView
+                        android:layout_width="@dimen/onefive"
+                        android:layout_height="@dimen/onefive"
+                        android:padding="@dimen/two"
+                        android:src="@drawable/disscount"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="@dimen/eightfive"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="Old Price           :"
+                        android:textSize="@dimen/onefour"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="500"
+                        android:textSize="@dimen/onefour" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/three"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+                    <ImageView
+                        android:layout_width="@dimen/onefive"
+                        android:layout_height="@dimen/onefive"
+                        android:padding="@dimen/two"
+                        android:src="@drawable/disscount"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="@dimen/eightfive"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="Offer Price        :"
+                        android:textSize="@dimen/onefour"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_sale_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="250"
+                        android:textSize="@dimen/onefour" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/three"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+                    <ImageView
+                        android:layout_width="@dimen/twozero"
+                        android:layout_height="@dimen/twozero"
+                        android:padding="@dimen/two"
+                        android:src="@drawable/detail" />
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/three"
+                        android:padding="@dimen/five"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="description"
+                        android:textSize="@dimen/onefour" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/twozero"
+                        android:layout_height="@dimen/twozero"
+                        android:padding="@dimen/two"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/onefive"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="abc xyz"
+                        android:textSize="@dimen/onezero" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/three"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/twozero"
+                        android:layout_height="@dimen/twozero"
+                        android:padding="@dimen/two"
+                        android:src="@drawable/phone_call" />
+
+                    <!--    <TextView
+                            android:id="@+id/tv_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/onefive"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+
+                            android:paddingLeft="@dimen/seven"
+                            android:text="+91-740-524-8931"
+                            android:textSize="@dimen/onefour" />-->
+                    <TextView
+                        android:id="@+id/tv_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/three"
+                        android:padding="@dimen/five"
+                        android:paddingLeft="@dimen/seven"
+                        android:text=""
+                        android:textSize="@dimen/onefour" />
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="@dimen/three"
+                     android:orientation="horizontal"
+                     android:padding="@dimen/five">
+
+                     <ImageView
+                         android:layout_width="@dimen/twozero"
+                         android:layout_height="@dimen/twozero"
+                         android:padding="@dimen/two"
+                         android:src="@drawable/mail" />
+
+                     <TextView
+                         android:id="@+id/tv_email"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/onefive"
+                         android:clickable="true"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="@dimen/seven"
+                         android:text="raju@gmail.com"
+                         android:textSize="@dimen/onefour" />
+                 </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/three"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+                    <ImageView
+                        android:layout_width="@dimen/twozero"
+                        android:layout_height="@dimen/twozero"
+                        android:padding="@dimen/two"
+                        android:src="@drawable/mail" />
+
+                    <!--            <TextView
+                                    android:id="@+id/tv_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/onefive"
+                                    android:clickable="true"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/seven"
+                                    android:text=""
+                                    android:textSize="@dimen/onefour" />-->
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/three"
+                        android:padding="@dimen/five"
+                        android:paddingLeft="@dimen/seven"
+                        android:text=""
+                        android:textSize="@dimen/onefour" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/twozero"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five">
+
+                    <ImageView
+                        android:layout_width="@dimen/twozero"
+                        android:layout_height="@dimen/twozero"
+                        android:padding="@dimen/two"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/seven"
+                        android:text="Jamnagar - Rajkot Hwy, Naranka, Gujarat 360110"
+                        android:textSize="@dimen/onefour" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_similar_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/threezero"
+                    android:paddingLeft="@dimen/seven"
+                    android:text="Similar Product"
+                    android:textSize="@dimen/onefour" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#000000"></View>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_other_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="#d4d4d4" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

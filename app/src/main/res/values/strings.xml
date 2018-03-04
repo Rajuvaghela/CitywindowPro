@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Citywindow</string>
+    <string name="title_activity_homemenu_display">HomemenuDisplayActivity</string>
+    <string name="drawer_open">dopen</string>
+    <string name="drawer_close">dclose</string>
+    <string name="action_settings">Settings</string>
+    <string name="spinner_title">Select Category</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="api_key">AIzaSyAHeKEZGNH03Sz8fy0HANAJ0RcfbU_zVDg</string>
+</resources>

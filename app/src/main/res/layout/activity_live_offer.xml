@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_live_offer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_marginRight="@dimen/five"
+        android:layout_marginTop="@dimen/onezero"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onetwozero"
+            android:layout_marginTop="@dimen/five"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_yummyfoods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_yummyfoods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/restauranty"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="YUMMY FOODS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fashionista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_fashionfesta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/shopping"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="Fashionista"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onetwozero"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_electronics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_electronics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/electronics1"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="Electronics"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_malls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_supermarket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/mallimg"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="mall &amp; super market"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onetwozero"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_health"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_health"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/health"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="Health &amp; personal care"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_education"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/education"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="Education"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onetwozero"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_home_appliance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_gadjets"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/home_decor1"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="home appliance"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_real_estate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/four"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_marginTop="@dimen/four"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_realesttae"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/eight"
+                    android:src="@drawable/real_estate"
+                    app:civ_border_color="#cc3333"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:gravity="center"
+                    android:padding="@dimen/five"
+                    android:text="Real-estate"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onetwo" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

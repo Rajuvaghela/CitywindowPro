@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <RelativeLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_submit"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/onezerozero"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_merchent_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_marginLeft="@dimen/five"
+                    android:gravity="center"
+                    android:text="Merchant Inquiry Form"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/twozero" />
+
+                <EditText
+
+                    android:id="@+id/editText_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:hint="Company name *"
+                    android:paddingLeft="@dimen/six" />
+
+
+                <EditText
+                    android:id="@+id/et_person_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+
+                    android:hint="Person Name *"
+                    android:paddingLeft="@dimen/six"
+                    android:visibility="gone" />
+
+                <!--           <Spinner
+                               android:id="@+id/spinner_category"
+                               android:layout_width="match_parent"
+                               android:layout_height="@dimen/fourzero"
+                               android:layout_margin="@dimen/five"
+                               android:background="@drawable/border_edittext"
+                               android:paddingLeft="@dimen/six" />
+
+                           <Spinner
+                               android:id="@+id/spinner_sub_category"
+                               android:layout_width="match_parent"
+                               android:layout_height="@dimen/fourzero"
+                               android:layout_margin="@dimen/five"
+                               android:background="@drawable/border_edittext"
+                               android:paddingLeft="@dimen/six" />-->
+
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/onezerozero"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Address *"
+                    android:paddingLeft="@dimen/six"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/editText_contact_no1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:hint="Mobile number 1 *"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/six" />
+
+
+                <EditText
+                    android:id="@+id/editText_contact_no2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:hint="Mobile number 2"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/six" />
+
+
+                <EditText
+                    android:id="@+id/editText_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/border_edittext"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/six" />
+
+
+                <EditText
+                    android:id="@+id/editText_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/onezerozero"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/border_edittext"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="Description "
+                    android:padding="@dimen/six" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fivezero"
+            android:layout_alignParentBottom="true"
+
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

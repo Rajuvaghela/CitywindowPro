@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_above="@+id/btn_submit_offer">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_submit_offer"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sixzero"
+                    android:gravity="center"
+                    android:text="Upload Offer detail"
+                    android:textSize="@dimen/twozero" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:paddingLeft="@dimen/six"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_sub_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:paddingLeft="@dimen/six"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_disscount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:ems="10"
+                android:hint="Disscount *"
+                android:paddingLeft="@dimen/six" />
+
+            <EditText
+                android:id="@+id/editText_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:ems="10"
+                android:hint="Title *"
+                android:paddingLeft="@dimen/six" />
+
+            <EditText
+                android:id="@+id/editText_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onezerozero"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/border_edittext"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Description *"
+                android:paddingLeft="@dimen/six"
+                android:textAlignment="textStart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/eightzero"
+                android:layout_marginTop="@dimen/onezero"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/eightzero"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/imageview_photo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fourzero"
+                        android:layout_weight="1"
+                        android:src="@drawable/upload"
+                        android:text="Photo 1" />
+
+                    <TextView
+                        android:id="@+id/textview_price1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/four"
+                        android:layout_weight="1"
+                        android:text="Upload Image"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/one"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/five"
+                    android:background="#000000"></View>
+
+                <EditText
+                    android:id="@+id/ed_photo1_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Product Price" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:background="#000000"></View>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit_offer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourzero"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="Skip"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

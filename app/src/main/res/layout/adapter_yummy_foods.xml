@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/four"
+    android:layout_marginLeft="@dimen/two"
+    android:layout_marginRight="@dimen/two"
+    android:layout_marginTop="@dimen/four"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onefourfive"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:layout_marginRight="@dimen/_2ssp"
+                android:padding="@dimen/two"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/south" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:background="#000000"
+                android:paddingLeft="@dimen/two"
+                android:paddingRight="@dimen/two"></View>
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:text="South"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/five"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/onezero"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

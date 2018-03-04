@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onezerozero"
+            android:layout_marginTop="@dimen/six"
+            android:scaleType="centerCrop"
+            android:src="@drawable/border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ninefive"
+            android:layout_marginTop="@dimen/onezero"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_subcategory1_image"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="@dimen/ninezero"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:padding="@dimen/five"
+                android:src="@drawable/restauranty" />
+
+            <TextView
+                android:id="@+id/tv_subcategory1_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:paddingLeft="@dimen/onezero"
+                android:paddingTop="@dimen/onezero"
+                android:paddingRight="@dimen/five"
+                android:layout_marginRight="@dimen/threefive"
+                android:text=""
+                android:textAllCaps="true"
+                android:maxLines="4"
+                android:textColor="@color/red_font_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout><!--
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onezerozero"
+            android:layout_marginTop="@dimen/six"
+            android:scaleType="centerCrop"
+            android:src="@drawable/custom_border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eightzero"
+            android:layout_marginTop="@dimen/onezero"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_subcategory1_image"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="@dimen/ninezero"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:padding="@dimen/five"
+                android:src="@drawable/restauranty" />
+
+            <TextView
+                android:id="@+id/tv_subcategory1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:text="DOSA.COM"
+                android:textAllCaps="true"
+                android:textColor="@color/red_font_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>-->

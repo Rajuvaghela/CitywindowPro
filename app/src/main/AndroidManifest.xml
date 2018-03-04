@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.citywindowpro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomemenuDisplayActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YummyFoodsActivity" />
+        <activity android:name=".YummyFoodsDetailActivity" />
+        <activity android:name=".YummyFoodsMoreDetailsActivity" />
+        <activity android:name=".GetRegistrationPhotoActivity" />
+        <activity android:name=".FiveMainProductActivity" />
+        <activity android:name=".FiveMainProductSubcategory1Activity" />
+        <activity android:name=".FashionistaMainActivity" />
+        <activity android:name=".FashionistaSubcategory1Activity" />
+        <activity android:name=".RealEstateMainActivity" />
+        <activity android:name=".RealEstateSubcategory1Activity" />
+        <activity android:name=".RealEstateSubcategory2Activity" />
+        <activity android:name=".AddLiveOfferActivity" />
+        <activity android:name=".FashionistaSubcategory2Activity" />
+        <activity android:name=".FashionistaSubcategory3Activity" />
+        <activity android:name=".LiveOfferActivity" />
+        <activity android:name=".LiveOfferDetailActivity" />
+        <activity android:name=".LiveOfferSubcategory1Activity" />
+        <activity android:name=".AddMerchantActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AboutusActivity" />
+        <activity android:name=".PrivacyPolicyActivity" />
+        <activity android:name=".FullScreenActivity" />
+        <activity android:name=".MapsActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".MerchantAcountActivity" />
+        <activity android:name=".UploadProfilePhotoActivity" />
+        <activity android:name=".UploadGallaryPhotoActivity" />
+        <activity android:name=".DeleteProfilePhotoActivity" />
+        <activity android:name=".DeleteGalleryPhotoActivity" />
+        <activity android:name=".FashionManActivity" />
+    </application>
+
+</manifest>

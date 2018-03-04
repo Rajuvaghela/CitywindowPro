@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_top"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_height="@dimen/sixzero">
+
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixzero"
+            android:layout_below="@+id/ll_yummyfoods_slider"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cloth"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Cloth"
+                android:textSize="@dimen/onetwo" />
+
+            <Button
+                android:id="@+id/btn_shoes"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Shoes"
+                android:textSize="@dimen/onetwo" />
+
+            <Button
+                android:id="@+id/btn_beauti"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Beauti Parlours and Tatoos"
+                android:textSize="@dimen/onetwo" />
+
+            <Button
+                android:id="@+id/btn_accessories"
+                android:layout_width="@dimen/onezerozero"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Accessories"
+                android:textSize="@dimen/onetwo" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hsv_top">
+
+        <FrameLayout
+            android:id="@+id/fragment_fashionista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_yummydetaail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hsv_top"
+        android:layout_marginBottom="@dimen/five"
+        android:layout_marginTop="@dimen/five"
+        android:scrollbars="none"
+   />
+</RelativeLayout>
